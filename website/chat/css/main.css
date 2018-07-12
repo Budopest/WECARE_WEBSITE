@@ -1,0 +1,137 @@
+/*Border-box reset*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/*Chat styling*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ background-image: url('../img/breadcumb2.jpg')
+}
+.container{
+    width: 500px;
+    min-width: 390px;
+    height: 600px;
+    background: #fff;
+    padding: 25px;
+    margin: 20px auto;
+    box-shadow: 0 3px #ccc;
+    border-radius: 5px;
+}
+
+.container .header
+{
+    text-align: center;
+    position: relative;
+    
+}
+
+.container .header::after
+{
+       position: absolute;
+    content: '';
+    width: 130px;
+    height: 2px;
+    left: 156px;
+    top: 53px;
+    background-color: #db1818;
+}
+.container .header h1
+{
+    color: #187ce3;
+    text-transform: uppercase;
+}
+.userSettings {
+    margin-bottom: 20px;
+    color: #38d725;
+    text-transform: uppercase
+}
+
+.chat {
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.chat #chatOutput {
+    overflow-y: auto;
+    height: 280px;
+    width: 100%;
+    border: 1px solid #777;
+    border-radius: 5px;
+    margin-bottom: 5%;
+ 
+}
+
+.chat #chatOutput p.left{
+    margin: 2px;
+    padding: 15px;
+	margin: 5px 10px 0;
+    /*border-bottom: 1px solid #bbb;*/
+   /* word-break: break-all;*/
+    background: #1ddced;
+	border-radius: 12px;
+	color:#fff;
+	font-size:18px;
+	width:80%;
+	float:left;
+	/*max-height:50%;*/
+	
+}
+.chat #chatOutput p.right{
+    margin: 2px;
+    padding: 15px;
+	margin: 5px 10px 0;
+    /*border-bottom: 1px solid #bbb;*/
+   /* word-break: break-all;*/
+    background: #1adda4;
+	border-radius: 12px;
+	color:#fff;
+	font-size:18px;
+	width:80%;
+	float:right;
+	/*max-height:50%;*/
+	
+}
+
+.chat .form-group
+{
+    width: 100%;
+}
+
+.chat .form-control
+{
+    margin-bottom: 3%;
+    outline: none;
+ 
+}
+
+.chat button
+{
+    background-color: #5599f9;
+    color: #FFF;
+    width: 25%;
+  
+    padding: 5px 15px;
+    border: none;
+}
+
+/* .chat #chatInput {
+    width: 75%;
+} */
+
+/* .chat #chatSend {
+    width: 25%;
+    background: #1ddced;
+    padding: 5px 15px;
+    border: none;
+} */
